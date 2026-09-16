@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1.000 seguidores — Geração Eucaristia</title>
+<meta name="description" content="Chegamos a mil seguidores no Instagram! Confirme sua presença na festa da Geração Eucaristia.">
+
+<meta property="og:title" content="1.000 seguidores — Geração Eucaristia">
+<meta property="og:description" content="Chegamos a mil seguidores no Instagram! Confirme sua presença na festa.">
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%8E%89</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="topo">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="wordmark" id="nome-conta">Geração Eucaristia</p>
+
+      <div class="numero-wrap">
+        <span class="numero" id="numero-milestone" data-target="1000">0</span>
+      </div>
+      <p class="numero-legenda">seguidores no Instagram 🎉</p>
+
+      <p class="hero__mensagem" id="mensagem-festa"></p>
+
+      <a href="#confirmar" class="botao botao--principal">Confirmar presença</a>
+    </div>
+  </section>
+
+  <!-- CONVITE -->
+  <section class="secao secao--convite">
+    <div class="convite">
+      <p class="convite__titulo">O convite</p>
+      <dl class="convite__lista">
+        <div class="convite__item">
+          <dt>Data</dt>
+          <dd id="convite-data">—</dd>
+        </div>
+        <div class="convite__item">
+          <dt>Horário</dt>
+          <dd id="convite-horario">—</dd>
+        </div>
+        <div class="convite__item">
+          <dt>Local</dt>
+          <dd id="convite-local">—</dd>
+        </div>
+      </dl>
+      <a href="" id="convite-mapa" class="convite__mapa" style="display:none;">Ver no mapa</a>
+    </div>
+  </section>
+
+  <!-- CONTADOR -->
+  <section class="secao secao--contador">
+    <p class="contador" id="contador-texto">Carregando confirmações…</p>
+  </section>
+
+  <!-- FORMULÁRIO -->
+  <section class="secao secao--form" id="confirmar">
+    <h2 class="secao__titulo">Confirme sua presença</h2>
+
+    <form id="form-rsvp" class="form" novalidate>
+      <label class="campo">
+        <span>Nome completo</span>
+        <input type="text" name="nome" required autocomplete="name">
+      </label>
+
+      <label class="campo">
+        <span>WhatsApp</span>
+        <input type="tel" name="whatsapp" required autocomplete="tel" placeholder="(11) 91234-5678">
+        <small>Usaremos para enviar novidades sobre a festa.</small>
+      </label>
+
+      <label class="campo">
+        <span>Instagram <em>(opcional)</em></span>
+        <input type="text" name="instagram" autocomplete="off" placeholder="@seu.usuario">
+      </label>
+
+      <button type="submit" class="botao botao--principal botao--form">
+        <span class="botao__texto">Confirmar presença 🎉</span>
+      </button>
+    </form>
+    <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+  </section>
+
+  <footer class="rodape">
+    <p>Feito com carinho pela <span id="rodape-nome">Geração Eucaristia</span></p>
+    <a id="rodape-insta" href="https://instagram.com" target="_blank" rel="noopener">Seguir no Instagram</a>
+  </footer>
+</main>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
